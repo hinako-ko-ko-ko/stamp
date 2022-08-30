@@ -13,6 +13,11 @@
 		B8E9ECE528BC013000692D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECE328BC013000692D3A /* Main.storyboard */; };
 		B8E9ECE728BC013700692D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECE628BC013700692D3A /* Assets.xcassets */; };
 		B8E9ECEA28BC013700692D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECE828BC013700692D3A /* LaunchScreen.storyboard */; };
+		B8E9ECF728BC037100692D3A /* hana.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECF228BC037100692D3A /* hana.png */; };
+		B8E9ECF828BC037100692D3A /* onpu.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECF328BC037100692D3A /* onpu.png */; };
+		B8E9ECF928BC037100692D3A /* hoshi.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECF428BC037100692D3A /* hoshi.png */; };
+		B8E9ECFA28BC037100692D3A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECF528BC037100692D3A /* background.png */; };
+		B8E9ECFB28BC037100692D3A /* shitumon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E9ECF628BC037100692D3A /* shitumon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B8E9ECE628BC013700692D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8E9ECE928BC013700692D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8E9ECEB28BC013700692D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E9ECF228BC037100692D3A /* hana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hana.png; sourceTree = "<group>"; };
+		B8E9ECF328BC037100692D3A /* onpu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onpu.png; sourceTree = "<group>"; };
+		B8E9ECF428BC037100692D3A /* hoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoshi.png; sourceTree = "<group>"; };
+		B8E9ECF528BC037100692D3A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B8E9ECF628BC037100692D3A /* shitumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shitumon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +71,23 @@
 				B8E9ECE128BC013000692D3A /* ViewController.swift */,
 				B8E9ECE328BC013000692D3A /* Main.storyboard */,
 				B8E9ECE628BC013700692D3A /* Assets.xcassets */,
+				B8E9ECF128BC037100692D3A /* StampResouces */,
 				B8E9ECE828BC013700692D3A /* LaunchScreen.storyboard */,
 				B8E9ECEB28BC013700692D3A /* Info.plist */,
 			);
 			path = stamp;
+			sourceTree = "<group>";
+		};
+		B8E9ECF128BC037100692D3A /* StampResouces */ = {
+			isa = PBXGroup;
+			children = (
+				B8E9ECF228BC037100692D3A /* hana.png */,
+				B8E9ECF328BC037100692D3A /* onpu.png */,
+				B8E9ECF428BC037100692D3A /* hoshi.png */,
+				B8E9ECF528BC037100692D3A /* background.png */,
+				B8E9ECF628BC037100692D3A /* shitumon.png */,
+			);
+			path = StampResouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +149,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E9ECEA28BC013700692D3A /* LaunchScreen.storyboard in Resources */,
+				B8E9ECF928BC037100692D3A /* hoshi.png in Resources */,
+				B8E9ECFA28BC037100692D3A /* background.png in Resources */,
+				B8E9ECF828BC037100692D3A /* onpu.png in Resources */,
 				B8E9ECE728BC013700692D3A /* Assets.xcassets in Resources */,
 				B8E9ECE528BC013000692D3A /* Main.storyboard in Resources */,
+				B8E9ECFB28BC037100692D3A /* shitumon.png in Resources */,
+				B8E9ECF728BC037100692D3A /* hana.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +318,8 @@
 				DEVELOPMENT_TEAM = 6B7X9487DJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = stamp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "編集した画像をフォトブラリに保存する";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アプリ内で編集する画像をフォトライブラリから表示する";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +348,8 @@
 				DEVELOPMENT_TEAM = 6B7X9487DJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = stamp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "編集した画像をフォトブラリに保存する";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アプリ内で編集する画像をフォトライブラリから表示する";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
